@@ -58,6 +58,8 @@
 //#include "G4MonopoleFieldSetup.hh"
 #include "SimG4Core/MagneticField/interface/FieldBuilder.h"
 
+#include "CLHEP/Units/SystemOfUnits.h"
+
 class G4SafetyHelper; 
 class G4Monopole;
 
