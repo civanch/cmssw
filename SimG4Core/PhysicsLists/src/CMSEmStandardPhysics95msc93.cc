@@ -66,8 +66,9 @@
 
 #include "G4SystemOfUnits.hh"
 
-CMSEmStandardPhysics95msc93::CMSEmStandardPhysics95msc93(const G4String& name, G4int ver, std::string reg):
-  G4VPhysicsConstructor(name), verbose(ver), region(reg) {
+CMSEmStandardPhysics95msc93::CMSEmStandardPhysics95msc93(const G4String& name, 
+							 G4int ver, std::string reg)
+: G4VPhysicsConstructor(name), verbose(ver), region(reg) {
   G4LossTableManager::Instance();
 }
 
