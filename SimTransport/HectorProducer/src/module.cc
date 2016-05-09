@@ -4,4 +4,4 @@
 #include "SimTransport/HectorProducer/interface/HectorProducer.h"
 
 
-DEFINE_FWK_MODULE (HectorProducer);
+//DEFINE_FWK_MODULE (HectorProducer);
