@@ -1398,7 +1398,7 @@ class ConfigBuilder(object):
         stepSpec = self.stepMap["SIM"]
 	if stepSpec and stepSpec[0]=="SimSequentialMode_cff":
 	        self.loadAndRemember("Configuration/StandardSequences/SimSequentialMode_cff")
- 	        print "Step: SIM Geant4 sequential is chosen "	
+ 	        print "Step: SIM Geant4 sequential is chosen ", stepSpec	
 
         if not self._options.fast:
 		if self._options.gflash==True:
