@@ -204,9 +204,8 @@ G4ClassificationOfNewTrack StackingAction::ClassifyNewTrack(const G4Track * aTra
   if (aTrack->GetCreatorProcess()==nullptr || aTrack->GetParentID()==0) {
     if (!trackNeutrino && (abspdg == 12 || abspdg == 14 || abspdg == 16 || abspdg == 18)) {
       classification = fKill;
-    } else if (worldSolid->Inside(aTrack->GetVertexPosition()) == kOutside) {
+    } else if (worldSolid->Inside(aTrack->GetPosition()) == kOutside) {
       classification = fKill;
-      //  G4cout << "Kill primary track outside world volume " << aTrack->GetTrackID() << G4endl;
     } else {
       newTA->primary(aTrack);
     }
